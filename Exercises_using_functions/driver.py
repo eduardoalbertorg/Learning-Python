@@ -5,6 +5,7 @@ import _1_4_unique_words as _1_4_unique_words
 import _1_5_word_frequency as _1_5_word_frequency
 import _1_6_frequent_words_greater_than_five as _1_6_frequent_words_greater_than_five
 import _2_1_fibonacci_generator as _2_1_fibonacci_generator
+import _2_2_natural_numbers_factorial as _2_2_natural_numbers_factorial
 
 zenPython = '''
 The Zen of Python, by Tim Peters
@@ -39,8 +40,10 @@ def main():
     # most_frequent_words = _1_6_frequent_words_greater_than_five.get_most_frequent_words(word_list)
     # print(most_frequent_words)
     fibonacci = _2_1_fibonacci_generator.fib_gen()
-    for _ in range(54):
-        print(next(fibonacci))
+    factorial = _2_2_natural_numbers_factorial.factorial_gen()
+    for _ in range(5):
+        # print(next(fibonacci))
+        print(next(factorial))
 
 
 if __name__ == '__main__':
