@@ -1,4 +1,5 @@
 import _1_1_separate_into_words as _1_1_separate_into_words
+import _1_2_remove_flank_chars as _1_2_remove_flank_chars
 
 zenPython = '''
 The Zen of Python, by Tim Peters
@@ -25,6 +26,7 @@ Namespaces are one honking great idea -- let's do more of those!
 
 def main():
     word_list = _1_1_separate_into_words.convert_to_word_list(zenPython)
+    word_list = _1_2_remove_flank_chars.remove_from_word_list(word_list)
     print(word_list)
 
 if __name__ == '__main__':
