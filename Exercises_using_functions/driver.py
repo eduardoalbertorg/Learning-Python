@@ -4,7 +4,7 @@ import _1_3_convert_to_lowercase as _1_3_convert_to_lowercase
 import _1_4_unique_words as _1_4_unique_words
 import _1_5_word_frequency as _1_5_word_frequency
 import _1_6_frequent_words_greater_than_five as _1_6_frequent_words_greater_than_five
-
+import _2_1_fibonacci_generator as _2_1_fibonacci_generator
 
 zenPython = '''
 The Zen of Python, by Tim Peters
@@ -35,9 +35,12 @@ def main():
     word_list = _1_2_remove_flank_chars.remove_from_word_list(word_list)
     word_list = _1_3_convert_to_lowercase.to_lower(word_list)
     # unique_word = _1_4_unique_words.remove_duplicates(word_list)
-    word_frequency = _1_5_word_frequency.return_word_count(word_list)
-    most_frequent_words = _1_6_frequent_words_greater_than_five.get_most_frequent_words(word_list)
-    print(most_frequent_words)
+    # word_frequency = _1_5_word_frequency.return_word_count(word_list)
+    # most_frequent_words = _1_6_frequent_words_greater_than_five.get_most_frequent_words(word_list)
+    # print(most_frequent_words)
+    fibonacci = _2_1_fibonacci_generator.fib_gen()
+    for _ in range(54):
+        print(next(fibonacci))
 
 
 if __name__ == '__main__':
